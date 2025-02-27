@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website By: Fathan Arsyad orang pagilaran</title>
+    <title>FzStore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Kepo ya? Buka Web Orang😹</h1>
-    <p>web ini Fathan yang bikin😡</p>
-</head>
+    <header>
+        <h1>FzStore Hosting</h1>
+    </header>
+
+    <section class="packages">
+        <h2>Pilih Paket Hosting</h2>
+        <div class="package-list">
+            <div class="package">
+                <h3>Paket Basic</h3>
+                <p>• RAM: 2GB <br> • Penyimpanan: 10GB SSD <br> • Slot: 10 Pemain</p>
+                <p class="price">Rp 20.000/bulan</p>
+                <button onclick="orderNow('Basic')">Pesan Sekarang</button>
+            </div>
+            <div class="package">
+                <h3>Paket Pro</h3>
+                <p>• RAM: 4GB <br> • Penyimpanan: 20GB SSD <br> • Slot: 20 Pemain</p>
+                <p class="price">Rp 50.000/bulan</p>
+                <button onclick="orderNow('Pro')">Pesan Sekarang</button>
+            </div>
+            <div class="package">
+                <h3>Paket Ultimate</h3>
+                <p>• RAM: 8GB <br> • Penyimpanan: 40GB SSD <br> • Slot: 50 Pemain</p>
+                <p class="price">Rp 100.000/bulan</p>
+                <button onclick="orderNow('Ultimate')">Pesan Sekarang</button>
+            </div>
+            <div class="package">
+                <h3>Paket Lagends</h3>
+                <p>• RAM: 10 <br> • Penyimpanan: 80GB SSD <br> • Slot: Custom Pemain</p>
+                <p class="price">Rp 150.000/bulan</p>
+                <button onclick="orderNow('Custom')">Pesan Sekarang</button>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FzStoreHost</p>
+    </footer>
+
+    <script>
+        function orderNow(packageName) {
+            alert("Anda memilih paket " + packageName + ". Silakan lanjutkan pemesanan.");
+            // Bisa diarahkan ke WhatsApp atau form pemesanan
+            window.location.href = "https://wa.me/6285293393972?text=Aku ingin memesan paket " + packageName;
+        }
+    </script>
+</body>
 </html>
