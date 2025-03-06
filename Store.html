@@ -3,60 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store - Fzstore✨</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>PHost - Hosting Server</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
-<body onload="AOS.init();">
-    <header>
-        <h1>FzStoreHost</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="store.html">Store</a>
-            <a href="https://wa.me/6285293393972">Contact</a>
-        </nav>
-    </header>
+<body>
+  
+<nav class="navbar">
+    <div class="Logo">
+        <img src="Log.png" alt="Logo">
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Store.html">List Paket</a></li>
+        <li><a href="https://t.me/fz_store0">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+</nav>
 
-    <section class="store">
-        <h2 data-aos="fade-up">📦Paket Hosting Minecraft🦅</h2>
+    <section id="paket" class="packages">
+        <h2>Pilih Paket Anda</h2>
+        <div class="package-container">
+            <div class="package">
+                <h3>Paket Basic</h3>
+                <p><strong>Rp 5.000/bulan</strong></p>
+                <button onclick="openModal('basic')">Cek Selengkapnya</button>
+                <a href="https://t.me/fz_store0" class="order-btn">Pesan via Telegram</a>
+            </div>
 
-        <div class="paket" data-aos="zoom-in">
-            <h3>Basic Plan</h3>
-            <p>4 GB RAM - Rp15.000</p>
-            <button onclick="order('Basic Plan', '4 GB RAM - Rp15.000')">Order</button>
-        </div>
-
-        <div class="paket" data-aos="zoom-in">
-            <h3>Pro Plan</h3>
-            <p>8 GB RAM - Rp30.000</p>
-            <button onclick="order('Pro Plan', '8 GB RAM - Rp30.000')">Order</button>
-        </div>
-
-        <div class="paket" data-aos="zoom-in">
-            <h3>Elite Plan</h3>
-            <p>16 GB RAM - Rp60.000</p>
-            <button onclick="order('Elite Plan', '16 GB RAM - Rp60.000')">Order</button>
-        </div>
-
-        <div class="paket" data-aos="zoom-in">
-            <h3>Ultimate Plan</h3>
-            <p>32 GB RAM - Rp100.000</p>
-            <button onclick="order('Ultimate Plan', '32 GB RAM - Rp100.000')">Order</button>
-        </div>
-
-        <div class="paket" data-aos="zoom-in">
-            <h3>Extreme Plan</h3>
-            <p>64 GB RAM - Rp115.000</p>
-            <button onclick="order('Extreme Plan', '64 GB RAM - Rp115.000')">Order</button>
-        </div>
+            <div class="package">
+                <h3>Paket Pro</h3>
+                <p><strong>Rp 50.000/bulan</strong></p>
+                <button onclick="openModal('pro')">Cek Selengkapnya</button>
+                <a href="https://t.me/fz_store0" class="order-btn">Pesan via Telegram</a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 FzStore. All rights reserved.</p>
-    </footer>
+    <!-- Popup Modal -->
+    <div id="modal-basic" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('basic')">&times;</span>
+            <h2>Paket Basic</h2>
+            <p><strong>RAM:</strong> 4GB</p>
+            <p><strong>CPU:</strong> 5 Core</p>
+            <p><strong>Storage:</strong> 20GB SSD</p>
+        </div>
+    </div>
+
+    <div id="modal-pro" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pro')">&times;</span>
+            <h2>Paket Pro</h2>
+            <p><strong>RAM:</strong> 16GB</p>
+            <p><strong>CPU:</strong> 8 Core</p>
+            <p><strong>Storage:</strong> 50GB SSD</p>
+        </div>
+    </div>
+        <footer class="footer">
+            © 2025 PHost | FathanMcz | PatanMc001. All rights reserved.
+        </footer>
 
     <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
-</html>
+</html>  
