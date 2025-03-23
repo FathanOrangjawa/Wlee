@@ -31,11 +31,21 @@
         <div class="package-container">
             <div class="package">
                 <h3>Paket Basic</h3>
+                <h4>Terlaris!!</h4>
+                <br>
                 <p><strong>Rp 5.000/bulan</strong></p>
                 <button onclick="openModal('basic')">Cek Selengkapnya</button>
                 <a href="https://t.me/phanhost" class="order-btn">Pesan via Telegram</a>
             </div>
 
+            <div class="package">
+                <h3>Paket Biasa</h3>
+                <p><strong>Rp 15.000/bulan</strong></p>
+                <button onclick="openModal('biasa')">Cek Selengkapnya</button>
+                <a href="https://t.me/phanhost" class="order-btn">Pesan via Telegram</a>
+            </div>
+        </div>
+        
             <div class="package">
                 <h3>Paket Pro</h3>
                 <p><strong>Rp 20.000/bulan</strong></p>
@@ -55,6 +65,16 @@
             <p><strong>Storage:</strong> 20GB SSD</p>
         </div>
     </div>
+
+    <div id="modal-biasa" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('biasa')">&times;</span>
+            <h2>Paket Biasa</h2>
+            <p><strong>RAM:</strong> 10GB</p>
+            <p><strong>CPU:</strong> 6 Core</p>
+            <p><strong>Storage:</strong> 20GB SSD</p>
+        </div>
+</div>
 
     <div id="modal-pro" class="modal">
         <div class="modal-content">
